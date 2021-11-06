@@ -1,0 +1,86 @@
+﻿@import "../base/vars-mixins";
+
+button, .btn, input[type=submit] {
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-font-smoothing: antialiased;
+	vertical-align: middle;
+	background-color: @transparent;
+	border-radius: 0;
+	border: 1px solid @transparent;
+
+	&:focus, &:active, &:hover {
+		outline: none;
+		color: inherit;
+	}
+}
+
+.btn {
+	.fluid-type(16, 18);
+	background-color: @transparent;
+	text-align: center;
+	padding: .5em 1em;
+	color: @blue-light;
+	transition: all 300ms ease-out;
+	border: 2px solid @blue-light;
+
+	&:focus, &:active, &:hover {
+		color: @gray-dark;
+		background-color: @red;
+		border-color: @red;
+	}
+}
+
+// THEME RULES
+// -------------------------
+.btn {
+
+	// &-small {
+	// 	.fluid-type(12, 12);
+	// 	text-transform: none;
+	// 	padding: .5em .75em;
+	// }
+
+	// &-full-width {
+	// 	width: 100%;
+	// }
+
+	// &-full-width-mobile-only {
+	// 	width: 100%;
+
+	// 	@media @medium-up {
+	// 		width: auto;
+	// 	}
+	// }
+
+	&-icon {
+		/*
+			<button class="btn btn-icon btn-icon-left">
+				<span>Button text</span><i class="fas fa-cat"></i>
+			</button>
+		*/
+		.flex-display(inline-flex);
+		.justify-content(space-between);
+		.align-items(center);
+
+		[class*="fa-"], span {
+			.flex(0 0 auto);
+		}
+
+		[class*="fa-"] {
+			margin-left: 10px;
+		}
+
+		&-left {
+			.flex-direction(row-reverse);
+
+			[class*="fa-"] {
+				margin-left: 0;
+				margin-right: 10px;
+			}
+		}
+	}
+}

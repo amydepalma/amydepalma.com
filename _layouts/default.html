@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body class="{{ page.body-class }}">
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include navigation.html %}
+  <script src="{{site.url}}/assets/js/main-dist.js"></script>
+</body>
+</html>

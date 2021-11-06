@@ -1,0 +1,68 @@
+.sass-cache/
+.jekyll-metadata
+.jekyll-cache
+
+# =========================
+# Operating System Files
+# =========================
+
+# Windows
+# =========================
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+_site/travel-app/assets/css/base/base.less
+_site/travel-app/assets/css/base/bookmark-icon.less
+_site/travel-app/assets/css/base/buttons.less
+_site/travel-app/assets/css/base/loading-icon.less
+_site/travel-app/assets/css/base/type-base.less
+_site/travel-app/assets/css/base/type-stylized.less
+_site/travel-app/assets/css/base/user-photo.less
+_site/travel-app/assets/css/base/utilities.less
+_site/travel-app/assets/css/components/author.less
+_site/travel-app/assets/css/components/card.less
+_site/travel-app/assets/css/components/img-header.less
+_site/travel-app/assets/css/components/modals.less
+_site/travel-app/assets/css/layouts/app-section.less
+_site/travel-app/assets/css/layouts/footer.less
+_site/travel-app/assets/css/layouts/header.less
+_site/travel-app/assets/css/layouts/main.less
+_site/travel-app/assets/css/prepros-6.config
+_site/travel-app/assets/css/site.css
+_site/travel-app/assets/css/site.css.map
+_site/travel-app/assets/css/site.less
+_site/travel-app/assets/css/vendor/bootstrap-reboot.less
+_site/travel-app/assets/css/vendor/magnific-popup/magnific-popup.less
+_site/travel-app/assets/imgs/file-system.jpg
+_site/travel-app/assets/imgs/screen1.jpg
+_site/travel-app/assets/imgs/screen2.jpg
+_site/travel-app/assets/imgs/screen3.jpg
+_site/travel-app/assets/js/main-dist.js
+_site/travel-app/assets/js/main.js
+_site/travel-app/assets/js/vendor/magnific-popup/jquery.magnific-popup.min.js
+_site/travel-app/assets/prepros-6.config
+_site/travel-app/bookmarks/index.html
+_site/travel-app/documentation/index.html
+_site/travel-app/explore/hurricane/index.html
+_site/travel-app/explore/inca-trail/index.html
+_site/travel-app/explore/pittsburgh/index.html
+_site/travel-app/explore/san-pedro/index.html
+_site/travel-app/index.html
+_site/travel-app/itinerary/index.html

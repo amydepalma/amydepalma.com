@@ -1,0 +1,50 @@
+@import "../base/vars-mixins";
+
+.icon-menu  {
+	width: 70%;
+	
+	&-line {
+		&-1, &-2, &-3 {
+			position: relative;
+			overflow: hidden;
+			background-color: @red;
+			width: 100%;
+			height: 2px;
+			transition: all .2s;
+		}
+		
+		&-1 {
+			transform: translateY(-7px);
+		}
+
+		&-2 {
+			margin: -2px 0 0 0;
+			transform: translateY(0);
+		}
+
+		&-3 {
+			margin: -2px 0 0 0;
+			transform: translateY(7px);
+		}
+	}
+
+	&.is-open {
+		.icon-menu-line-1,
+		.icon-menu-line-2,
+		.icon-menu-line-3 {
+			background-color: @red;
+		}
+
+		.icon-menu-line-1 {
+			transform: rotate(45deg);
+		}
+
+		.icon-menu-line-2 {
+			transform: rotate(-45deg);
+		}
+
+		.icon-menu-line-3 {
+			opacity: 0;
+		}
+	}
+}

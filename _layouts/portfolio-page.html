@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body class="{{ page.body-class }}">
+    <main>
+        <section class="left">
+            <h1 class="lv-mar-bottom-30">
+                {{ page.title }}
+                {% if page.subtitle %}
+                <small>{{ page.subtitle }}</small>
+                {% endif %}
+            </h1>
+
+            <p>
+                <strong class="p-large">{{ page.company }}</strong><span class="p p-small">, {{ page.year }}</span>
+            </p>
+
+            <p class="lv-mar-top-0 lv-mar-bottom-25">
+                {% if page.item-short-url %}
+                <a href="http://www.{{ page.item-short-url }}" target="_blank" rel="nofollow" class="lv-text-serif">
+                    <i class="fas fa-external-link-alt"></i> {{ page.item-short-url }}
+                </a>
+                {% endif %}
+                {% if page.item-short-desc %}
+                    <small>{{ page.item-short-desc }}</small>
+                {% endif %}
+            </p>
+
+            <p><strong>Technologies &amp; Concepts</strong></p>
+            <p class="p-small lv-mar-top-5">{{ page.tech }}</p>
+
+            <a href="/portfolio" class="btn btn-icon btn-icon-left lv-mar-top-40">
+                <span>Back to All</span><i class="fas fa-angle-left"></i>
+            </a>
+            
+            <a href="/" class="site-name">amydepalma.com</a>
+           
+        </section>
+
+        <section class="right lv-bkg-pattern">
+            <div class="container">
+                {{ content }}
+            </div>
+        </section>
+    </main>
+
+    {% include navigation.html %}
+    <script src="{{site.url}}/assets/js/main-dist.js"></script>
+</body>
+
+</html>

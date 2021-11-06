@@ -1,0 +1,37 @@
+---
+layout: default
+body-class: t-home
+---
+
+<section class="left">
+    <h1 class="h1-large lv-mar-bottom-20">Hello!</h1>
+    <p class="p-large">I’m Amy DePalma, a UI developer/designer passionate about bringing easy-to-use, meaningful, and beautiful user experiences to life. I aspire to produce seamless UI interfaces by helping bridge the gap between a project’s visual design and its developed interface.</p>
+
+    <p class="p-small">Things I get excited about? Content modeling, organization, UI patterns, and learning new things.</p>
+
+    <p class="p-small">I’m a big fan of concerts (where I’m standing, never sitting), my four 🐱, being a twin, and trivia night. I’m not a huge fan of <a href="http://www.amazon.com/Scalp-Massager-Body-Back-Company/dp/B001IHXFQK" target="_blank" rel="nofollow">those head massager things</a>.</p>
+
+    <a href="/" class="site-name">amydepalma.com</a>
+</section>
+
+<section class="right lv-bkg-pattern">
+    <div class="portfolio-grid">
+        {% assign sorted_pages = site.portfolio | sort: "home-order" %}
+        {% for item in sorted_pages %}
+        {% if item.home-publish == true %}
+            <a href="{{ item.url }}" class="portfolio-item card lv-bs">
+                <div class="card-image">
+                    <img src="portfolio/assets/{{ item.thumb-src }}" alt="{{ item.description }}" />
+                </div>
+        
+                <div class="card-copy">
+                    <div class="card-copy-inner" style="border-color: {{ item.theme-color }}">
+                        <h2 style="color: {{ item.theme-color }}">{{ item.title }}</h2>
+                        <p>{{ item.callout }}</p>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+        {% endfor %}
+    </div>     
+</section>
